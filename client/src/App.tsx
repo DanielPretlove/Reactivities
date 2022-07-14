@@ -8,7 +8,6 @@ export default function App() {
 
   useEffect(() => {
     axios.get("http://localhost:5000/api/activities").then(res => {
-      console.log(res);
       setActivities(res.data);
     })
   }, [])
